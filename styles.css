@@ -1,0 +1,89 @@
+body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+
+        .calculator {
+            width: 300px;
+            background: #ffffff;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: grid;        
+            gap: 10px;
+        }
+        
+        .display {
+            width: 100%;
+            height: 60px;
+            font-size: 2em;
+            text-align: right;
+            border: none;
+            background: #f9f9f9;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            
+        }
+
+        button {
+            padding: 20px;
+            font-size: 1.2em;
+            border-color: #f9f9f9;
+            border-style: solid;
+            border-radius: 5px;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            /* transition: background 0.3s; */
+            transition: transform 0.3s ease;
+        }
+        .st{
+            background-color:#07ba82 ;
+            border: none;
+            color: white;
+        }
+        
+        .last{
+            display:grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 20px;
+        }
+        .lastvalue{
+            background: white;
+            border-radius: 50%;
+            color: red;
+        }
+        .clear{
+            background: #dc3545;
+            border-radius: 50%;
+            color: white;
+            
+        }
+        button:hover {
+            background:#f9f9f9;            
+            transform: scale(1.11);
+            
+        }
+        .st:hover {
+            background-color: #16a578;
+        }
+        
+        button.clear:hover {
+            background: #d12738;
+        }
+
+        
